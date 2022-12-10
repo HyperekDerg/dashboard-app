@@ -5,7 +5,14 @@ services:
     build: ./frontend
     container_name: VUE_FRONT
     ports: 
-      - '5173:5173'
+      - "5173:5173"
     volumes:
       - ./frontend:/app
-      - ./app/node_modules
+  
+  express:
+    build: ./backend
+    container_name: EXPRESS_API
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
