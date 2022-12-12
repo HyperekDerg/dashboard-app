@@ -1,0 +1,18 @@
+CREATE TABLE dashboard.themes (
+	id int auto_increment NOT NULL,
+	theme_name varchar(100) NOT NULL,
+	CONSTRAINT themes_PK PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE dashboard.selected_theme (
+	id int NOT NULL,
+	selected_theme_id varchar(100) NOT NULL,
+	CONSTRAINT selected_theme_PK PRIMARY KEY (selected_theme_id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
