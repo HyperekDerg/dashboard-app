@@ -6,6 +6,6 @@
     color:  rgba(var(--colors-link-active), var(--tw-text-opacity));
 }
 
-#logo {
+.logo {
     color:  rgba(var(--colors-font-color), var(--tw-text-opacity)) !important;
 }
