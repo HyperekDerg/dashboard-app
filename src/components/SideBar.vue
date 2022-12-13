@@ -1,10 +1,9 @@
 <script setup>
     import { ref } from 'vue';
-    import { RouterLink, RouterView } from 'vue-router';
+    import { RouterLink} from 'vue-router';
     import IconHome from './icons/IconHome.vue';
     import IconDashboard from './icons/IconDashboard.vue';
     import IconEdit from './icons/IconEdit.vue';
-    import IconUsers from './icons/IconUsers.vue';
     import IconConfig from './icons/IconConfig.vue';
     import IconStack from './icons/IconStack.vue';
 
@@ -20,27 +19,26 @@
             </RouterLink>
             <!-- Start main Nav -->
             <nav>
-                <RouterLink to="/" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+                <RouterLink to="/admin/" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
                     <IconHome class="text-xl" />
                     <span class="text-xl font-color">Home</span>
                 </RouterLink>
-                <RouterLink to="/layout" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+                <RouterLink to="/admin/layout" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
                     <IconEdit class="text-xl" />
                     <span class="text-xl font-color">Layout</span>
                 </RouterLink>
-                <RouterLink to="/config" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+                <RouterLink to="/admin/config" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
                     <IconConfig class="text-xl" />
                     <span class="text-xl font-color">Config</span>
                 </RouterLink>
             </nav>
         </div>
     </div>
-    <main class="flex-1 overflow-hidden bg-primary">
+    <div class="overflow-hidden bg-primary">
         <div class="bg-sidebar-primary px-4 py-4 md:hidden">
             <button @click="showSidebar = !showSidebar">
                 <IconStack class="text-3xl text-white"/>
             </button>
         </div>
-        <RouterView/>
-    </main>
+    </div>
 </template>
