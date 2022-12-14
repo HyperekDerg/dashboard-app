@@ -16,7 +16,11 @@ module.exports = {
               "sidebar-primary": "#242b32",
               "sidebar-secoundary": "#37424c",
               "font-color": "#f8f8f9",
-              "link-active": "#55a773"
+              "link-active": "#55a773",
+              "refresh-button": "#f8f8f9",
+              "refresh-button-hover": "#DDDDE1",
+              "theme-1": "#B85C38",
+              "theme-2": "#5C3D2E"  
             },
             fontFamily: {
               title: "Helvetica"
@@ -32,7 +36,12 @@ module.exports = {
               "sidebar-primary": "#35478C",
               "sidebar-secoundary": "#4E7AC7",
               "font-color": "#F4EFDC",
-              "link-active": "#FEB228"
+              "link-active": "#FEB228",
+              "refresh-button": "#f8f8f9",
+              "refresh-button-hover": "#DDDDE1",
+              "theme-1": "#F9A101",
+              "theme-2": "#55a773"
+
             },
             fontFamily: {
               title: "Helvetica"

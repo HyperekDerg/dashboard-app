@@ -1,6 +1,7 @@
 <script setup>
    import SideBar from '../../components/SideBar.vue';
    import ApiStatus from '../../components/ApiStatus.vue'
+   import ThemeStatus from '../../components/ThemeStatus.vue';
 </script>
 <template>
    <main class="relative bg-primary min-h-screen md:flex">
@@ -16,7 +17,7 @@
                <!-- First grid element -->
                <ApiStatus />
                <!-- Socound grid element -->
-               <ApiStatus />
+               <ThemeStatus />
             </div>
          </div>
       </div>
