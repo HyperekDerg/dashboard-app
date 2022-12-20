@@ -21,6 +21,12 @@ npm install
 ```sh
 npm run dev
 ```
+
+### Setup firebase
+
+Login on firebase and create new app with email/password authorization. Then paste config into 
+```main.js```
+
 ### Logging in and registering for the admin panel using firebase
 
 ```sh
