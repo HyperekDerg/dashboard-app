@@ -21,6 +21,15 @@ npm install
 ```sh
 npm run dev
 ```
+### Logging in and registering for the admin panel using firebase
+
+```sh
+http://localhost:5173/admin/setup/register - Register form
+```
+
+```sh
+http://localhost:5173/admin/login - Login form
+```
 
 ### Compile and Minify for Production
 

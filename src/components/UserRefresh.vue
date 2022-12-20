@@ -11,6 +11,6 @@ export default {
 
 <template>
         <div class="px-4">
-            <button v-on:click="refresh()" class="text-secondary font-medium rounded-lg px-4 py-2 bg-refresh-button hover:bg-refresh-button-hover duration-300">Refresh Page</button>
+            <button v-on:click="refresh()" class="text-secondary font-medium rounded-lg px-4 py-2 bg-button hover:bg-button-hover duration-300">Refresh Page</button>
         </div>
 </template>

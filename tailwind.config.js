@@ -17,13 +17,14 @@ module.exports = {
               "sidebar-secoundary": "#37424c",
               "font-color": "#f8f8f9",
               "link-active": "#55a773",
-              "refresh-button": "#f8f8f9",
-              "refresh-button-hover": "#DDDDE1",
+              "button": "#f8f8f9",
+              "button-hover": "#DDDDE1",
               "theme-1": "#B85C38",
               "theme-2": "#5C3D2E"  
             },
-            fontFamily: {
-              title: "Helvetica"
+            backgroundImage: {
+              "hero-pattern": "url('https://png.vector.me/files/images/7/0/700916/cubic_background.jpg')",
+              "page-pattern": "url('https://wallpaper.dog//large/20377007.jpg')"
             }
           }
         },
@@ -37,14 +38,14 @@ module.exports = {
               "sidebar-secoundary": "#4E7AC7",
               "font-color": "#F4EFDC",
               "link-active": "#FEB228",
-              "refresh-button": "#f8f8f9",
-              "refresh-button-hover": "#DDDDE1",
+              "button": "#f8f8f9",
+              "button-hover": "#DDDDE1",
               "theme-1": "#F9A101",
               "theme-2": "#55a773"
-
             },
-            fontFamily: {
-              title: "Helvetica"
+            backgroundImage: {
+              "hero-pattern": "url('https://wallpaper.dog/large/20487512.jpg')",
+              "page-pattern": "url('https://wallpaper.dog/large/20508486.jpg')"
             }
           }
         }

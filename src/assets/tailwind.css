@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.router-link-active {
-    color:  rgba(var(--colors-link-active), var(--tw-text-opacity));
-}
-
-.logo {
-    color:  rgba(var(--colors-font-color), var(--tw-text-opacity)) !important;
-}
+@layer base {
+    html {
+      font-family: Helvetica;
+    }
+    .router-link-active {
+        color:  rgba(var(--colors-link-active), var(--tw-text-opacity));
+    }
+    
+    .logo {
+        color:  rgba(var(--colors-font-color), var(--tw-text-opacity)) !important;
+    }    
+  }

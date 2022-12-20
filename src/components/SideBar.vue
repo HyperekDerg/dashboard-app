@@ -1,6 +1,8 @@
 <script setup>
    import { ref } from 'vue';
-   import { RouterLink} from 'vue-router';
+   import { onAuthStateChanged, signOut, getAuth } from '@firebase/auth';
+   import { onMounted} from 'vue';
+   import { RouterLink, useRouter} from 'vue-router';
    import IconHome from './icons/IconHome.vue';
    import IconDashboard from './icons/IconDashboard.vue';
    import IconEdit from './icons/IconEdit.vue';
@@ -9,6 +11,25 @@
    import IconUsers from './icons/IconUsers.vue';
    
    const showSidebar = ref(false);
+   const isLoggedIn = ref(false);
+
+   let auth;
+   onMounted(() => {
+      auth = getAuth();
+      onAuthStateChanged(auth, (user) => {
+         if (user) {
+               isLoggedIn.value = true;
+         } else {
+               isLoggedIn.value = false;
+         }
+      });
+   });
+   const router = useRouter();
+   const handleSignOut = () => {
+      signOut(auth).then(() => {
+         router.push("/");
+      });
+   }
 </script>
 
 <template>
@@ -39,6 +60,10 @@
             <IconUsers class="text-xl" />
             <span class="text-xl font-color">User Site</span>
          </RouterLink>
+         <div @click="handleSignOut" v-if="isLoggedIn" class="flex items-center cursor-pointer space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+               <IconConfig class="text-xl" />
+               <span class="text-xl font-color">Logout</span>
+         </div>
       </nav>
    </div>
 

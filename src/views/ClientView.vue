@@ -1,5 +1,5 @@
 <script setup>
-import UserRefresh from '../../components/UserRefresh.vue';
+import UserRefresh from '../components/UserRefresh.vue';
 </script>
 
 <template>
