@@ -12,7 +12,7 @@
             <h1 class="text-xl uppercase text-font-color font-bold">Admin Home</h1>
          </div>
          <!-- Main Content go here -->
-         <div class="px-4 pt-8">
+         <div class="px-4 pt-8 pb-4">
             <div class="grid overflow-hidden gap-6 mgrid-cols-2 grid-rows-1">
                <!-- First grid element -->
                <ApiStatus />
