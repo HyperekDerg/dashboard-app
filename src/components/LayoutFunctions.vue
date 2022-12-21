@@ -1,6 +1,6 @@
 <template>
     <div class="bg-secondary rounded-lg shadow-lg py-6 px-4">
-    <h2 class="font-medium text-font-color text-lg px-2 py-4">CLIENT SIDE CONFIGURATION</h2>
+    <h2 class="font-medium text-font-color text-lg px-2 py-4">User Side Configuration</h2>
         <div class="bg-primary p-6 rounded-lg">
             <!-- First -->
             <div class="grid overflow-hidden grid-cols-1 md:grid-cols-2 grid-rows-1 gap-2 font-bold border-y-2 border-secondary py-4">

@@ -1,6 +1,8 @@
 <script setup>
    import SideBar from '../components/SideBar.vue';
    import ThemeVue from '../components/ThemeVue.vue';
+   import WebsocketConfig from '../components/WebsocketConfig.vue';
+   import AdminFunctions from '../components/AdminFunctions.vue';
 </script>
 
 <template>
@@ -13,6 +15,8 @@
          </div>
          <div class="px-4 pt-6 pb-4">
            <ThemeVue />
+           <WebsocketConfig class="mt-8" />
+           <AdminFunctions class="mt-8" />
          </div>
       </div>
    </main>
