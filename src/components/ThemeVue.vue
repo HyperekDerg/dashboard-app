@@ -1,21 +1,13 @@
-<script>
-export default {
-   name: 'Themer',
-   data() {
-     return {
-       selectedTheme: localStorage.getItem('theme-color') || 'dark-theme'
-     };
-   },
-   methods: {
-      switchTheme(theme) {
-         localStorage.setItem('theme-color', theme);
-         this.selectedTheme = localStorage.getItem('theme-color')
-         if (theme == this.selectedTheme) {
-            window.location.reload();
-         }
-      },
-   }
+<script setup>
+   import { db } from '../main.js';
+   import { doc, setDoc } from '@firebase/firestore';
+
+   async function switchTheme(theme) {
+   await setDoc(doc(db, "theme", "LrFCAu9rG4ZprnDW5JAZ"), {
+      selected: theme
+   });
 }
+
 </script>
 <template>
    <div class="bg-secondary rounded-lg shadow-lg py-5 px-4">
