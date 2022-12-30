@@ -1,7 +1,7 @@
 <script setup>
    import { db } from '../main.js';
    import { ref, onMounted } from 'vue';
-   import { doc, setDoc, collection, onSnapshot } from '@firebase/firestore';
+   import { doc, updateDoc, collection, onSnapshot } from '@firebase/firestore';
 
    const websocket_link = ref([])
     onMounted(() => {
@@ -18,7 +18,7 @@
 
     async function setWebsocket() {
         let websocket = document.getElementById('websocket').value;
-        await setDoc(doc(db, "websocket", "C5LSlGU9PigkJ5cpkWyq"), {
+        await updateDoc(doc(db, "websocket", "C5LSlGU9PigkJ5cpkWyq"), {
             websocket_url: websocket
         });
         document.getElementById('websocket').value = '';

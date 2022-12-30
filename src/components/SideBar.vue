@@ -44,23 +44,23 @@
 
       <!-- Main Navbar section -->
       <nav>
-         <RouterLink to="/admin/" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+         <RouterLink to="/admin/" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-hover rounded transition duration-200">
             <IconHome class="text-xl" />
             <span class="text-xl font-color">Home</span>
          </RouterLink>
-         <RouterLink to="/admin/layout" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+         <RouterLink to="/admin/layout" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-hover rounded transition duration-200">
             <IconEdit class="text-xl" />
             <span class="text-xl font-color">Layout</span>
          </RouterLink>
-         <RouterLink to="/admin/config" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+         <RouterLink to="/admin/config" class="flex items-center space-x-2 py-3 px-4 hover:bg-sidebar-hover rounded transition duration-200">
             <IconConfig class="text-xl" />
             <span class="text-xl font-color">Config</span>
          </RouterLink>
-         <RouterLink to="/" class="flex items-center space-x-2 mt-12 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+         <RouterLink to="/" class="flex items-center space-x-2 mt-12 py-3 px-4 hover:bg-sidebar-hover rounded transition duration-200">
             <IconUsers class="text-xl" />
             <span class="text-xl font-color">User Site</span>
          </RouterLink>
-         <div @click="handleSignOut" v-if="isLoggedIn" class="flex items-center cursor-pointer space-x-2 py-3 px-4 hover:bg-sidebar-secoundary rounded transition duration-200">
+         <div @click="handleSignOut" v-if="isLoggedIn" class="flex items-center cursor-pointer space-x-2 py-3 px-4 hover:bg-sidebar-hover rounded transition duration-200">
                <IconConfig class="text-xl" />
                <span class="text-xl font-color">Logout</span>
          </div>

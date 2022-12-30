@@ -11,16 +11,21 @@ module.exports = {
           name: 'dark-theme',
           extend: {
             colors: {
+              // main colors
               "primary": "#454a4e",
-              "secondary": "#55a773",
+              "secondary": "#DC965A",
+              "config-area": "#454a4e",
+              // sidebar area
               "sidebar-primary": "#242b32",
-              "sidebar-secoundary": "#37424c",
+              "sidebar-hover": "#37424c",
+              // font color
               "font-color": "#f8f8f9",
-              "link-active": "#55a773",
+              "font-settings": "#f8f8f9",
+              // buttons
               "button": "#f8f8f9",
               "button-hover": "#DDDDE1",
-              "theme-1": "#B85C38",
-              "theme-2": "#5C3D2E"  
+              "switch-to-lite-theme": "#bb5008",
+              "switch-to-dark-theme": "#a54708"  
             },
             backgroundImage: {
               "hero-pattern": "url('https://png.vector.me/files/images/7/0/700916/cubic_background.jpg')",
@@ -32,16 +37,20 @@ module.exports = {
           name: 'lite-theme',
           extend: {
             colors: {
-              "primary": "#ECF0F1",
-              "secondary": "#3f54ab",
-              "sidebar-primary": "#35478C",
-              "sidebar-secoundary": "#4E7AC7",
-              "font-color": "#F4EFDC",
-              "link-active": "#FEB228",
+              // main colors
+              "primary": "#a5c1ae",
+              "secondary": "#568d66",
+              "config-area": "#a5c1ae",
+              // sidebar area
+              "sidebar-primary": "#004733",
+              "sidebar-hover": "#2b6a4d",
+              // font color
+              "font-color": "#ffffff",
+              // buttons
               "button": "#f8f8f9",
               "button-hover": "#DDDDE1",
-              "theme-1": "#F9A101",
-              "theme-2": "#55a773"
+              "switch-to-lite-theme": "#2b6a4d",
+              "switch-to-dark-theme": "#004733"
             },
             backgroundImage: {
               "hero-pattern": "url('https://wallpaper.dog/large/20487512.jpg')",
