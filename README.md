@@ -27,6 +27,36 @@ npm run dev
 Login on firebase and create new app with email/password authorization. Then paste config into 
 ```main.js```
 
+Create new firestore database with: 
+
+- admin-config { 
+    - show_api  boolean
+    - show_message boolean
+    - show_theme boolean
+},
+- message {
+    - message string
+},
+- theme {
+    - selected string
+},
+- user-config {
+    - show_api boolean
+    - show_message boolean
+    - show_reload boolean
+},
+- websocket {
+    - websocket_url string
+}
+
+Then change documents ID inside:
+
+- AdminFunctions.vue
+- LayoutForm.vue
+- LayoutFunctions.vue
+- ThemeVue.vue
+- WebsocketConfig.vue
+
 ### Logging in and registering for the admin panel using firebase
 
 ```sh

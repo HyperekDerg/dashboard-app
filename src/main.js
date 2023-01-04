@@ -9,14 +9,7 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration paste here
-const firebaseConfig = {
-    apiKey: "AIzaSyAtOeCVX8c65V3ffNixQGRWPgMPZy9yJDM",
-    authDomain: "dashboardapp-eeacf.firebaseapp.com",
-    projectId: "dashboardapp-eeacf",
-    storageBucket: "dashboardapp-eeacf.appspot.com",
-    messagingSenderId: "597057190841",
-    appId: "1:597057190841:web:a410f48ad089fdede3d468"
-  };
+
 
 import './assets/tailwind.css'
 
